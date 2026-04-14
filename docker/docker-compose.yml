@@ -25,6 +25,11 @@ services:
       DATABASE_URL: postgres://paperclip:paperclip@db:5432/paperclip
       PORT: "3100"
       SERVE_UI: "true"
+      GEMINI_API_KEY: "${GOOGLE_GENERATIVE_AI_API_KEY}"
+      GOOGLE_GENERATIVE_AI_API_KEY: "${GOOGLE_GENERATIVE_AI_API_KEY}"
+      GEMINI_SANDBOX: "false"
+      NO_SANDBOX: "1"
+      SANDBOX: "false"
       PAPERCLIP_DEPLOYMENT_MODE: "authenticated"
       PAPERCLIP_DEPLOYMENT_EXPOSURE: "private"
       PAPERCLIP_PUBLIC_URL: "${PAPERCLIP_PUBLIC_URL:-http://localhost:3100}"
